@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A9180431AD5700B001AC49B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9180421AD5700B001AC49B /* main.m */; };
+		1A9180511AD57CE9001AC49B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9180501AD57CE9001AC49B /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1A91803F1AD5700B001AC49B /* Fuctions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fuctions; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9180421AD5700B001AC49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A91804F1AD57CE9001AC49B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Fuctions/Model/Person.h; sourceTree = "<group>"; };
+		1A9180501AD57CE9001AC49B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Fuctions/Model/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		1A9180361AD5700B001AC49B = {
 			isa = PBXGroup;
 			children = (
+				1A9180521AD57F02001AC49B /* Model */,
 				1A9180411AD5700B001AC49B /* Fuctions */,
 				1A9180401AD5700B001AC49B /* Products */,
 			);
@@ -60,6 +64,15 @@
 				1A9180421AD5700B001AC49B /* main.m */,
 			);
 			path = Fuctions;
+			sourceTree = "<group>";
+		};
+		1A9180521AD57F02001AC49B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A91804F1AD57CE9001AC49B /* Person.h */,
+				1A9180501AD57CE9001AC49B /* Person.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9180511AD57CE9001AC49B /* Person.m in Sources */,
 				1A9180431AD5700B001AC49B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

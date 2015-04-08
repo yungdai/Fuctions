@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+// importing <>  are system level classes "" are programmer level classes
+#import "Model/Person.h"
 
-
-// c style function
+// below are classic c style functions
 
 // void is a function that doesn't return a value
 void someFunction() {
@@ -34,6 +35,10 @@ int addTwoSumsInt(int a, int b) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        // create an instance of Person Class
+        Person *person = [[Person alloc]init];
+        
+        [person returnString];
         // call someFunction
         someFunction();
         
@@ -42,12 +47,14 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i", balance);
         
         int total = addTwoSumsInt(56, 5);
-        NSLog(@"%i", total);
+        NSLog(@"%i is half of %i", total, total * 2);
         int a = 10;
         int b = 20;
         
         // call function with two integers
         addTwoSumsVoid(5, 6);
+        addTwoSumsVoid(a, b);
+        NSLog(@"%i is the value of a", a);
         addTwoSumsInt(5, 6);
         
         if(a > b) {
